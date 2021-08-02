@@ -15,20 +15,22 @@ struct LoginView : View {
     @State var bgColor = Color.black
     
     var body: some View {
-        ZStack {
-            LoginBackgroundView(bgColor: bgColor)
-            VStack {
-                LoginWelcomeView(name: name)
-                PickupLineView(pickupLines: pickupLines)
-                Spacer()
+        NavigationView {
+            ZStack {
+                LoginBackgroundView(bgColor: bgColor)
+                VStack {
+                    LoginWelcomeView()
+                    PickupLineView(pickupLines: pickupLines)
+                    Spacer()
+                }
             }
+            .onTapGesture {
+                randomize()
+            }
+            .onAppear(perform: {
+                randomize()
+            })
         }
-        .onTapGesture {
-            randomize()
-        }
-        .onAppear(perform: {
-            randomize()
-        })
     }
     
     func randomize() {
@@ -47,12 +49,17 @@ struct LoginBackgroundView: View {
 }
 
 struct LoginWelcomeView: View {
-    var name: String
+    @AppStorage("name") private var name = ""
+    @AppStorage("registered") private var registered = false
     var body: some View {
-        Text("Welcome, \(name) !")
-            .frame(width: 400, height: 50)
-            .font(.system(size: 22))
-            .foregroundColor(.white)
+        NavigationLink (
+            destination: ContentView().onAppear{registered=false},
+            label: {
+                Text("Welcome, \(name) !")
+                    .frame(width: 400, height: 50)
+                    .font(.system(size: 22))
+                    .foregroundColor(.white)
+            })
     }
 }
 

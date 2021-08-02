@@ -12,9 +12,9 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                StartBackgroundView(topColor: .blue, bottomColor: Color.white)
+                StartBackgroundView(topColor: Color("lightpink"), bottomColor: Color("lightpink"))
                 VStack {
-                    Spacer()
+                    LogoView()
                     StartWelcomeView()
                     TextfieldNameView()
                     if !name.isEmpty {
@@ -72,10 +72,21 @@ struct NavigationButtonView: View {
                 Text("Let's go!")
                     .frame(width: 150, height: 50)
                     .background(Color.white)
-                    .foregroundColor(Color.blue)
+                    .foregroundColor(Color("lightpink"))
                     .font(.system(size: 22, weight: .bold))
                     .cornerRadius(10)
                     .navigationBarHidden(true)
             })
+    }
+}
+
+struct LogoView: View {
+    var body: some View {
+        Image("pickuplines-logo")
+            .renderingMode(.original)
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .frame(width: 200, height: 200)
+            .padding(.top, 130)
     }
 }

@@ -14,7 +14,7 @@
 		21137FCD26B70B0A00622EAA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21137FCC26B70B0A00622EAA /* LoginView.swift */; };
 		21137FCF26B711B300622EAA /* ColorPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21137FCE26B711B300622EAA /* ColorPool.swift */; };
 		21137FD126B711D000622EAA /* PickupLinePool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21137FD026B711D000622EAA /* PickupLinePool.swift */; };
-		21C2F7C126B7F02B005A86F5 /* pickuplines-logo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 21C2F7C026B7F02B005A86F5 /* pickuplines-logo.jpeg */; };
+		21C602C526B82D7E0079A437 /* pickuplines-logo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 21C602C426B82D7E0079A437 /* pickuplines-logo.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		21137FCC26B70B0A00622EAA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		21137FCE26B711B300622EAA /* ColorPool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPool.swift; sourceTree = "<group>"; };
 		21137FD026B711D000622EAA /* PickupLinePool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupLinePool.swift; sourceTree = "<group>"; };
-		21C2F7C026B7F02B005A86F5 /* pickuplines-logo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "pickuplines-logo.jpeg"; path = "../../../../Downloads/pickuplines-logo.jpeg"; sourceTree = "<group>"; };
+		21C602C426B82D7E0079A437 /* pickuplines-logo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "pickuplines-logo.jpeg"; path = "../../../../Downloads/pickuplines-logo.jpeg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +67,7 @@
 				21137FCE26B711B300622EAA /* ColorPool.swift */,
 				21137FC126B6FB8D00622EAA /* Assets.xcassets */,
 				21137FC626B6FB8D00622EAA /* Info.plist */,
-				21C2F7C026B7F02B005A86F5 /* pickuplines-logo.jpeg */,
+				21C602C426B82D7E0079A437 /* pickuplines-logo.jpeg */,
 				21137FC326B6FB8D00622EAA /* Preview Content */,
 			);
 			path = PickupLines;
@@ -139,7 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21137FC526B6FB8D00622EAA /* Preview Assets.xcassets in Resources */,
-				21C2F7C126B7F02B005A86F5 /* pickuplines-logo.jpeg in Resources */,
+				21C602C526B82D7E0079A437 /* pickuplines-logo.jpeg in Resources */,
 				21137FC226B6FB8D00622EAA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
