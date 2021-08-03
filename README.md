@@ -1,6 +1,6 @@
 # Pickup-Lines-SwiftUI
 
-<div style="width: 1000px; height 600px;"><img src="pickuplines.png" width="85%" height="28%" align="right"></div>
+<div style="width: 1000px; height 600px;"><img src="pickuplines.png" width="28%" height="28%" align="right"></div>
 
 
 ## Overview
