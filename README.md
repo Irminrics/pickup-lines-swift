@@ -1,6 +1,6 @@
 # Pickup-Lines-SwiftUI
 
-<div style="width: 1000px; height 600px;"><img src="pickuplines.png" width="30%" height="30%" align="right"></div>
+<div style="width: 1000px; height 600px;"><img src="pickuplines.png" width="28%" height="28%" align="right"></div>
 
 
 ## Overview
@@ -24,7 +24,7 @@ Pickup-Lines-SwiftUI is an app that is built using SwiftUI! Get access to a bunc
 
 ## Acknowledgements
 
-I would like to acknowledge to following resources which helped me in the development of this project.
+I would like to acknowledge the following resources which helped me in the development of this project.
 All custom code belongs to myself.
 
 - SwiftUI Basics: [Sean Allen](https://www.youtube.com/channel/UCbTw29mcP12YlTt1EpUaVJw)
