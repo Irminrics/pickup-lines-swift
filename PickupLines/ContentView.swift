@@ -23,6 +23,7 @@ struct ContentView: View {
                     Spacer()
                 }
             }
+            
         }
     }
 }
@@ -70,12 +71,14 @@ struct NavigationButtonView: View {
             destination: LoginView(name: name).onAppear{registered=true},
             label: {
                 Text("Let's go!")
+                    .navigationTitle("")
                     .frame(width: 150, height: 50)
                     .background(Color.white)
                     .foregroundColor(Color("lightpink"))
                     .font(.system(size: 22, weight: .bold))
                     .cornerRadius(10)
                     .navigationBarHidden(true)
+                    .navigationBarBackButtonHidden(true)
             })
     }
 }
@@ -90,3 +93,4 @@ struct LogoView: View {
             .padding(.top, 130)
     }
 }
+

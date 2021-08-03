@@ -56,9 +56,12 @@ struct LoginWelcomeView: View {
             destination: ContentView().onAppear{registered=false},
             label: {
                 Text("Welcome, \(name) !")
+                    .navigationTitle("")
                     .frame(width: 400, height: 50)
                     .font(.system(size: 22))
                     .foregroundColor(.white)
+                    .navigationBarHidden(true)
+                    .navigationBarBackButtonHidden(true)
             })
     }
 }
@@ -72,5 +75,4 @@ struct PickupLineView: View {
             .foregroundColor(.white)
     }
 }
-
 
