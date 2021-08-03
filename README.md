@@ -15,6 +15,7 @@ Pickup-Lines-SwiftUI is an app that is built using SwiftUI! Get access to a bunc
 
 - A Mac running macOS Big Sur 11
 - Xcode 12.5
+- At least iPhone 11 or above 
 
 ### Configuration & Usage
 
