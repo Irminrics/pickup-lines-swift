@@ -49,6 +49,7 @@ struct TextfieldNameView: View {
     @AppStorage("name") private var name = ""
     var body: some View {
         TextField("Enter your name", text: $name)
+            .foregroundColor(Color("lightpink"))
             .frame(width: 280, height: 50)
             .border(Color.white)
             .background(Color.white)
