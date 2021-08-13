@@ -11,20 +11,21 @@ struct ContentView: View {
     @AppStorage("name") private var name = ""
     var body: some View {
         NavigationView {
-            ZStack {
-                StartBackgroundView(topColor: Color("lightpink"), bottomColor: Color("lightpink"))
-                VStack {
-                    LogoView()
-                    StartWelcomeView()
-                    TextfieldNameView()
+        ZStack {
+            StartBackgroundView(topColor: Color("lightpink"), bottomColor: Color("lightpink"))
+            VStack {
+                Spacer()
+                LogoView()
+                Spacer()
+                TextfieldNameView()
                     if !name.isEmpty {
                         NavigationButtonView()
                     }
-                    Spacer()
-                }
-            }
-            
+
+            }.offset(y: -50)
         }
+        
+    }
     }
 }
 
@@ -37,25 +38,16 @@ struct StartBackgroundView: View {
     }
 }
 
-struct StartWelcomeView: View {
-    var body: some View {
-        Text("Welcome")
-            .foregroundColor(.white)
-            .font(.system(size: 55, weight: .bold))
-    }
-}
-
 struct TextfieldNameView: View {
     @AppStorage("name") private var name = ""
     var body: some View {
         TextField("Enter your name", text: $name)
             .foregroundColor(Color("lightpink"))
             .frame(width: 280, height: 50)
-            .border(Color.white)
             .background(Color.white)
             .cornerRadius(10)
             .multilineTextAlignment(.center)
-            .padding(.bottom, 50)
+            .padding(.bottom, 30)
             .onChange(of: self.name, perform: { value in
                 if value.count > 20 {
                     self.name = String(value.prefix(20))
@@ -91,7 +83,13 @@ struct LogoView: View {
             .resizable()
             .aspectRatio(contentMode: .fit)
             .frame(width: 200, height: 200)
-            .padding(.top, 130)
     }
 }
+
+struct LoginView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+
 
