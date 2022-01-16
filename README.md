@@ -36,3 +36,5 @@ All custom code belongs to myself.
 
 This project belongs to Jun Kang. 
 Copyright © 2021 Irminrics, Jun Kang
+
+Archived on 16/1/2022. Do let me know if you face any issues.
